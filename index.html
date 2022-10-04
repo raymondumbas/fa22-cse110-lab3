@@ -16,7 +16,7 @@
 
         <header>
             <div>
-                <img src="docs/waves.jpg">
+                <img src="docs/waves.jpg" alt = "cool wave pattern border">
                 <span></span>
             </div>
         </header>
@@ -91,8 +91,9 @@
     </body>
 
     <details>
-        <summary> <b>Minutes Adjustment Form</b> </summary>
+        <summary> <b>Minutes Feedback Forms</b> </summary>
         <form>
+            <h2>Adjustment Form</h2>
            <fieldset>
                 <label for="names"> Enter your first and last name:</label>
                 <input list = "name" id="names" name="names">
@@ -120,58 +121,56 @@
 
                 <button>Submit</button>
            </fieldset> 
+
+           <h2>Rating Form</h2>
+           <fieldset>
+            <label for = "date2">Please enter the date of the minutes (mm/dd/yyyy):</label>
+            <input type = "text" id = "date2" name = "date2"><br><br>
+
+            <fieldset>
+                <legend>Rate the helpfulness of these minutes: </legend>
+
+                <div>
+                    <input type = "radio" id = "good" name = "rating" value = "good" checked>
+                    <label for = "good">good</label>
+                </div>
+
+                <div>
+                    <input type = "radio" id = "okay" name = "rating" value = "okay" checked>
+                    <label for = "okay">okay</label>
+                </div>
+
+                <div>
+                    <input type = "radio" id = "bad" name = "rating" value = "bad" checked>
+                    <label for = "bad">bad</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which areas can be improved?</legend>
+
+                <div>
+                    <input type = "checkbox" id = "title" name="title" >
+                    <label for = "title">Title/Heading</label>
+                </div>
+
+                <div>
+                    <input type = "checkbox" id = "agenda" name="agenda" >
+                    <label for = "agenda">Agenda</label>
+                </div>
+
+                <div>
+                    <input type = "checkbox" id = "notes" name="notes" >
+                    <label for = "notes">Notes</label>
+                </div>
+            </fieldset><br><br>
+
+            <button>Submit</button>
+        </fieldset>
+
         </form>
     </details><br>
 
-    <details>
-        <summary><b>Minutes Feedback Form</b></summary><br>
-        <form>
-            <fieldset>
-                <label for = "date2">Please enter the date of the minutes (mm/dd/yyyy):</label>
-                <input type = "text" id = "date2" name = "date2"><br><br>
-
-                <fieldset>
-                    <legend>Rate the helpfulness of these minutes: </legend>
-
-                    <div>
-                        <input type = "radio" id = "good" name = "rating" value = "good" checked>
-                        <label for = "good">good</label>
-                    </div>
-
-                    <div>
-                        <input type = "radio" id = "okay" name = "rating" value = "okay" checked>
-                        <label for = "okay">okay</label>
-                    </div>
-
-                    <div>
-                        <input type = "radio" id = "bad" name = "rating" value = "bad" checked>
-                        <label for = "bad">bad</label>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Which areas can be improved?</legend>
-
-                    <div>
-                        <input type = "checkbox" id = "title" name="title" >
-                        <label for = "title">Title/Heading</label>
-                    </div>
-
-                    <div>
-                        <input type = "checkbox" id = "agenda" name="agenda" >
-                        <label for = "agenda">Agenda</label>
-                    </div>
-
-                    <div>
-                        <input type = "checkbox" id = "notes" name="notes" >
-                        <label for = "notes">Notes</label>
-                    </div>
-                </fieldset><br><br>
-
-                <button>Submit</button>
-            </fieldset>
-        </form>
-    </details>
     <pre>
 
 
@@ -179,6 +178,6 @@
 
     </pre>
     <footer>
-        <img src="docs/waves.jpg">
+        <img src="docs/waves.jpg" alt = "cool wave pattern border">
     </footer>
 </html>
