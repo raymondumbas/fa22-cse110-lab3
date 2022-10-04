@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>
+            Meeting Minutes
+        </title>
+        <link rel = "icon" type = "image" href = docs/clock.jpg>
+        <meta name ="author" content="Raymond Umbas">
+    </head>
+        
+
+    <header>
+        <div>
+            <img src="docs/waves.jpg" align = "center">
+            <span></span>
+        </div>
+    </header>
+
+    <body>
+        <section><center>
+        <h1>Meeting Minutes</h1>
+        <h2>Group 16</h2>
+        <h3>October 3rd, 2022</h3>
+        <nav>
+            <a href="otherPages/prev.html"><i>prev</i></a> | <a href="otherPages/next.html"><i>next</i></a> 
+        </nav>
+        </center></section>
+        <br><br>
+        <hr>
+
+        <section>
+            <h1>Agenda</h1>
+            <p>
+                <ol>
+                    <li><b>Introductions</b></li><br>
+
+                    <li>Discuss <strong>broad</strong> goals
+                        <ul>
+                            <li>Individual</li>
+                            <li>Combine into group goals</li>
+                            <li>Not specific</li>
+                        </ul>
+                    </li><br>
+
+                    <li>Brainstorm <strong>details</strong>
+                        <ul>
+                            <li>Go more in depth on general goals</li>
+                            <li>Creative ideas</li>
+                            <li>Narrow down details</li>
+                        </ul>
+                    </li><br>
+
+                    <li><strong>Plan</strong> for next meeting</li>
+                        
+                </ol>
+            </p>
+        </section>
+        <hr>
+
+        <main>
+            <h1>Notes</h1>
+            <p>
+                Each team member introduced themselves with their name and a fun
+                fact about themselves
+            </p>
+            <p>
+                Then we discussed our broad goals
+                by sharing our individual goals and then trying to combine them into agreed upon
+                group goals, <em>making sure not to be too specific</em>
+            </p>
+            <p>
+                Then we turned those general goals into more specific details by brainstorming more ideas
+                and being creative with it, <em>only narrowing down details after we have brainstormed a lot</em>
+            </p>
+            <p>
+                Then we planned the time and date for the next meeting. And discussed what each individual needs to get done before next time.
+            </p>
+            <br><br>
+
+            Recording of meeting audio:<br>
+            <audio controls><source src = "docs/crickets.mp3" type = "audio/mpeg"></src></audio><br>
+
+            Visual Component:<br>
+            <video width="340" height = "220" controls>
+                <source src = "docs/visual.mp4" type = "video/mp4">
+            </video>
+        </main>
+        <hr><br><br>
+    </body>
+
+    <details>
+        <summary> <b>Minutes Adjustment Form</b> </summary>
+        <form>
+           <fieldset>
+                <label for="names"> Enter your first and last name:</label>
+                <input list = "name" id="names" name="names">
+
+                <datalist id = "name">
+                    <option value="Group Member 1">
+                    <option value="Group Member 2">
+                    <option value="Group Member 3">
+                </datalist><br><br>
+
+                <label for ="date">Date of minutes: </label>
+                <input type = "date" id = "date" name = "date"><br><br>
+
+                <label for="adjustment-type">Why do you want to adjust the minutes?</label>
+        
+                <select name = "adjustments" id = "adjustment-type">
+                    <option value = "">(select)</option>
+                    <option value = "inaccurate">Inaccurate</option>
+                    <option value = "additional">Additional Information</option>
+                    <option value = "clarity">Phrasing Clarity</option>
+                </select><br><br>
+
+                <label for="details">Explain the requested adjustment: <br></label>
+                <textarea id="details" name="details" rows = "10" cols = "40"></textarea><br><br>
+
+                <button>Submit</button>
+           </fieldset> 
+        </form>
+    </details><br>
+
+    <details>
+        <summary><b>Minutes Feedback Form</b></summary><br>
+        <form>
+            <fieldset>
+                <label for = "date2">Please enter the date of the minutes (mm/dd/yyyy):</label>
+                <input type = "text" id = "date2" name = "date2"><br><br>
+
+                <fieldset>
+                    <legend>Rate the helpfulness of these minutes: </legend>
+
+                    <div>
+                        <input type = "radio" id = "good" name = "rating" value = "good" checked>
+                        <label for = "good">good</label>
+                    </div>
+
+                    <div>
+                        <input type = "radio" id = "okay" name = "rating" value = "okay" checked>
+                        <label for = "okay">okay</label>
+                    </div>
+
+                    <div>
+                        <input type = "radio" id = "bad" name = "rating" value = "bad" checked>
+                        <label for = "bad">bad</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which areas can be improved?</legend>
+
+                    <div>
+                        <input type = "checkbox" id = "title" name="title" >
+                        <label for = "title">Title/Heading</label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "agenda" name="agenda" >
+                        <label for = "agenda">Agenda</label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "notes" name="notes" >
+                        <label for = "notes">Notes</label>
+                    </div>
+                </fieldset><br><br>
+
+                <button>Submit</button>
+            </fieldset>
+        </form>
+    </details>
+    <pre>
+
+
+
+
+    </pre>
+    <footer>
+        <img src="docs/waves.jpg" align = "center">
+    </footer>
+</html>
