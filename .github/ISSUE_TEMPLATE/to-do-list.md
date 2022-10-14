@@ -1,21 +1,17 @@
 ---
 name: To Do List
-about: Add an item to the list of tasks that need to get done.
+about: Add an item to the list of tasks.
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Type**
-Do you want to add a feature or fix a bug?
+** Type **
+Is this a bug fix or a new feature?
 
-**Describe**
-A clear and concise description of what you want us to change.
+** Details**
+What do you want changed?
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-
-**Additional context**
-Add any other context about the problem here.
+** Other notes**
+Any additional information we need to know?
