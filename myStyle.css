@@ -1,0 +1,88 @@
+/*FIX THIS*/
+@font-face {
+    font-family: "JosefinSans-Medium";
+    src: url(docs/JosefinSans-Medium.ttf);
+}
+
+
+@media (min-width: 35rem){
+    div{
+        background-color: white;
+    }
+}
+body{
+    font-family: "JosefinSans-Medium";
+    background-color: rgb(144, 199, 236); /*Light blue*/
+}
+
+a:hover{
+    color : gray;
+}
+
+a:active{
+    color: red;
+}
+.Title{
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10%/50%;
+
+    margin:auto;
+
+    text-align: center;
+
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    display: block;
+
+    height: 130px;
+    width: 600px;
+
+    position: static;
+}
+
+
+.Agenda{
+    border: solid black;
+    margin: 30px 50px 30px;
+    padding: 3em 2em 3em 2em;
+    
+    position:relative;
+}
+
+.Notes{
+    border: solid hsl(195, 100%, 0%);
+    padding: 3em 2em 3em 2em;
+    
+    margin-left: 50px;
+    margin-right: 50px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: block;
+
+    min-width: 1000px;
+    max-width: 4000px;
+}
+
+.AdjustmentForm{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1;
+}
+
+.RatingForm{
+    display: grid;
+    place-items:center;
+    justify-content: center;
+    grid-template-columns: 50%;
+    grid-template-rows: 10%;
+}
+
+

@@ -6,6 +6,7 @@
             Meeting Minutes
         </title>
         <link rel = "icon" type = "image/jpeg" href = docs/clock.jpg>
+        <link rel="stylesheet" href = "myStyle.css" >
         <meta name ="author" content="Raymond Umbas">
     </head>
         
@@ -21,152 +22,163 @@
             </div>
         </header>
 
-        <section>
-        <h1>Meeting Minutes</h1>
-        <h2>Group 16</h2>
-        <h3>October 3rd, 2022</h3>
-        <nav>
-            <a href="otherPages/prev.html"><i>prev</i></a> | <a href="otherPages/next.html"><i>next</i></a> 
-        </nav>
-        </section>
+        <div class = "Title">
+            <h1 style = "display:inline; text-decoration: underline overline #0000FF;">Meeting Minutes</h1>
+            <h2>Group 16</h2>
+            <h3 id ="date">October 3rd, 2022</h3>
+            <nav>
+                <a href="otherPages/prev.html"><i>prev</i></a> | <a href="otherPages/next.html"><i>next</i></a> 
+            </nav>
+        </div>
         <br><br>
         <hr>
 
         <section>
-            <h2>Agenda</h2>
-                <ol>
-                    <li><b>Introductions</b></li>
+            <div class = "Agenda">
+                <h2>Agenda</h2>
+                    <ol>
+                        <li><b>Introductions</b></li>
 
-                    <li>Discuss <strong>broad</strong> goals
-                        <ul>
-                            <li>Individual</li>
-                            <li>Combine into group goals</li>
-                            <li>Not specific</li>
-                        </ul>
-                    </li>
+                        <li>Discuss <strong>broad</strong> goals
+                            <ul>
+                                <li>Individual</li>
+                                <li>Combine into group goals</li>
+                                <li>Not specific</li>
+                            </ul>
+                        </li>
 
-                    <li>Brainstorm <strong>details</strong>
-                        <ul>
-                            <li>Go more in depth on general goals</li>
-                            <li>Creative ideas</li>
-                            <li>Narrow down details</li>
-                        </ul>
-                    </li>
+                        <li>Brainstorm <strong>details</strong>
+                            <ul>
+                                <li>Go more in depth on general goals</li>
+                                <li>Creative ideas</li>
+                                <li>Narrow down details</li>
+                            </ul>
+                        </li>
 
-                    <li><strong>Plan</strong> for next meeting</li>
-                        
-                </ol>
+                        <li><strong>Plan</strong> for next meeting</li>
+                            
+                    </ol>
+            </div>
         </section>
         <hr>
 
         <main>
-            <h1>Notes</h1>
-            <p>
-                Each team member introduced themselves with their name and a fun
-                fact about themselves
-            </p>
-            <p>
-                Then we discussed our broad goals
-                by sharing our individual goals and then trying to combine them into agreed upon
-                group goals, <em>making sure not to be too specific</em>
-            </p>
-            <p>
-                Then we turned those general goals into more specific details by brainstorming more ideas
-                and being creative with it, <em>only narrowing down details after we have brainstormed a lot</em>
-            </p>
-            <p>
-                Then we planned the time and date for the next meeting. And discussed what each individual needs to get done before next time.
-            </p>
-            <br><br>
+            <div class = "Notes">
+                <h1>Notes</h1>
+                <p>
+                    Each team member introduced themselves with their name and a fun
+                    fact about themselves
+                </p>
+                <p>
+                    Then we discussed our broad goals
+                    by sharing our individual goals and then trying to combine them into agreed upon
+                    group goals, <em>making sure not to be too specific</em>
+                </p>
+                <p>
+                    Then we turned those general goals into more specific details by brainstorming more ideas
+                    and being creative with it, <em>only narrowing down details after we have brainstormed a lot</em>
+                </p>
+                <p>
+                    Then we planned the time and date for the next meeting. And discussed what each individual needs to get done before next time.
+                </p>
+                <br><br>
 
-            Recording of meeting audio:<br>
-            <audio controls><source src = "docs/crickets.mp3" type = "audio/mpeg"></audio><br>
+                Recording of meeting audio:<br>
+                <audio controls><source src = "docs/crickets.mp3" type = "audio/mpeg"></audio><br>
 
-            Visual Component:<br>
-            <video width="340" height = "220" controls>
-                <source src = "docs/visual.mp4" type = "video/mp4">
-            </video>
+                Visual Component:<br>
+                <video width="340" height = "220" controls>
+                    <source src = "docs/visual.mp4" type = "video/mp4">
+                </video>
+            </div>
         </main>
         <hr><br><br>
 
         <details>
             <summary> <b>Minutes Feedback Forms</b> </summary>
             <form>
-                <h2>Adjustment Form</h2>
-               <fieldset>
-                    <label for="names"> Enter your first and last name:</label>
-                    <input list = "name" id="names" name="names">
-    
-                    <datalist id = "name">
-                        <option value="Group Member 1">
-                        <option value="Group Member 2">
-                        <option value="Group Member 3">
-                    </datalist><br><br>
-    
-                    <label for ="date">Date of minutes: </label>
-                    <input type = "date" id = "date" name = "date"><br><br>
-    
-                    <label for="adjustment-type">Why do you want to adjust the minutes?</label>
+                
+                    <h2>Adjustment Form</h2>
+                    <fieldset>
+                    <div class = "AdjustmentForm">
+                        <label for="names"> Enter your first and last name:</label>
+                        <input list = "name" id="names" name="names">
+        
+                        <datalist id = "name">
+                            <option value="Group Member 1">
+                            <option value="Group Member 2">
+                            <option value="Group Member 3">
+                        </datalist><br><br>
+        
+                        <label for ="date">Date of minutes: </label>
+                        <input type = "date" id = "date" name = "date"><br><br>
+        
+                        <label for="adjustment-type">Why do you want to adjust the minutes?</label>
+                
+                        <select name = "adjustments" id = "adjustment-type">
+                            <option value = "">(select)</option>
+                            <option value = "inaccurate">Inaccurate</option>
+                            <option value = "additional">Additional Information</option>
+                            <option value = "clarity">Phrasing Clarity</option>
+                        </select><br><br>
+        
+                        <label for="detail">Explain the requested adjustment: <br></label>
+                        <textarea id="detail" name="detail" rows = "10" cols = "40"></textarea><br><br>
+        
+                        <button>Submit</button>
+                    </div>
+                    </fieldset> 
+                
+                
+                
+                    <h2>Rating Form</h2>
+                    <fieldset>
+                        <div class = "RatingForm">
+                        <label for = "date2">Please enter the date of the minutes (mm/dd/yyyy):</label>
+                        <input type = "text" id = "date2" name = "date2"><br><br>
             
-                    <select name = "adjustments" id = "adjustment-type">
-                        <option value = "">(select)</option>
-                        <option value = "inaccurate">Inaccurate</option>
-                        <option value = "additional">Additional Information</option>
-                        <option value = "clarity">Phrasing Clarity</option>
-                    </select><br><br>
-    
-                    <label for="detail">Explain the requested adjustment: <br></label>
-                    <textarea id="detail" name="detail" rows = "10" cols = "40"></textarea><br><br>
-    
-                    <button>Submit</button>
-               </fieldset> 
-    
-               <h2>Rating Form</h2>
-               <fieldset>
-                <label for = "date2">Please enter the date of the minutes (mm/dd/yyyy):</label>
-                <input type = "text" id = "date2" name = "date2"><br><br>
-    
-                <fieldset>
-                    <legend>Rate the helpfulness of these minutes: </legend>
-    
-                    <div>
-                        <input type = "radio" id = "good" name = "rating" value = "good" checked>
-                        <label for = "good">good</label>
+                        <fieldset>
+                            <legend>Rate the helpfulness of these minutes: </legend>
+            
+                            <div>
+                                <input type = "radio" id = "good" name = "rating" value = "good" checked>
+                                <label for = "good">good</label>
+                            </div>
+            
+                            <div>
+                                <input type = "radio" id = "okay" name = "rating" value = "okay" checked>
+                                <label for = "okay">okay</label>
+                            </div>
+            
+                            <div>
+                                <input type = "radio" id = "bad" name = "rating" value = "bad" checked>
+                                <label for = "bad">bad</label>
+                            </div>
+                        </fieldset>
+            
+                        <fieldset>
+                            <legend>Which areas can be improved?</legend>
+            
+                            <div>
+                                <input type = "checkbox" id = "title" name="title" >
+                                <label for = "title">Title/Heading</label>
+                            </div>
+            
+                            <div>
+                                <input type = "checkbox" id = "agenda" name="agenda" >
+                                <label for = "agenda">Agenda</label>
+                            </div>
+            
+                            <div>
+                                <input type = "checkbox" id = "notes" name="notes" >
+                                <label for = "notes">Notes</label>
+                            </div>
+                        </fieldset><br><br>
+            
+                        <button>Submit</button>
                     </div>
-    
-                    <div>
-                        <input type = "radio" id = "okay" name = "rating" value = "okay" checked>
-                        <label for = "okay">okay</label>
-                    </div>
-    
-                    <div>
-                        <input type = "radio" id = "bad" name = "rating" value = "bad" checked>
-                        <label for = "bad">bad</label>
-                    </div>
-                </fieldset>
-    
-                <fieldset>
-                    <legend>Which areas can be improved?</legend>
-    
-                    <div>
-                        <input type = "checkbox" id = "title" name="title" >
-                        <label for = "title">Title/Heading</label>
-                    </div>
-    
-                    <div>
-                        <input type = "checkbox" id = "agenda" name="agenda" >
-                        <label for = "agenda">Agenda</label>
-                    </div>
-    
-                    <div>
-                        <input type = "checkbox" id = "notes" name="notes" >
-                        <label for = "notes">Notes</label>
-                    </div>
-                </fieldset><br><br>
-    
-                <button>Submit</button>
-            </fieldset>
-    
+                    </fieldset>
+            
             </form>
         </details>
         <pre>
