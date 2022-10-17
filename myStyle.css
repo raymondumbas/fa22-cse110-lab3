@@ -1,64 +1,61 @@
-/*FIX THIS*/
+/*NOTE: inline style, display:inline, and text decoration examples in HTML file*/
+
+
+/*Fonts*/
 @font-face {
     font-family: "JosefinSans-Medium";
     src: url(docs/JosefinSans-Medium.ttf);
 }
 
-
+/*Responsiveness: Media Query*/
 @media (min-width: 35rem){
     div{
-        background-color: white;
+        background-color: white; 
     }
 }
-body{
-    font-family: "JosefinSans-Medium";
-    background-color: rgb(144, 199, 236); /*Light blue*/
-}
 
-a:hover{
-    color : gray;
-}
 
-a:active{
-    color: red;
-}
+/*Class Selectors*/
 .Title{
 
+    /*Long-Hand Border*/
     border-style: solid;
-    border-width: 2px;
+    border-width: 2px;      /*Absolute Unit*/
     border-color: black;
-    border-radius: 10%/50%;
+    border-radius: 10%/50%; /*Relative Unit*/
 
-    margin:auto;
+    margin:auto; /*Auto Margin*/
 
     text-align: center;
 
-    padding-top: 3em;
-    padding-bottom: 3em;
-    padding-left: 1em;
+    /*Long-hand Padding*/
+    padding-top: 3em;    
+    padding-bottom: 3em; 
+    padding-left: 1em;   
     padding-right: 1em;
 
     display: block;
 
-    height: 130px;
-    width: 600px;
+    height: 130px;  /*Absolute Unit*/
+    width: 600px;   /*Absolute Unit*/
 
     position: static;
 }
 
 
 .Agenda{
-    border: solid black;
-    margin: 30px 50px 30px;
-    padding: 3em 2em 3em 2em;
+    border: solid black;  /*Short-hand Border*/
+    margin: 30px 50px 30px;  /*Short-hand Margin*/
+    padding: 3em 2em 3em 2em; /*Short-hand Padding*/
     
     position:relative;
 }
 
 .Notes{
-    border: solid hsl(195, 100%, 0%);
+    border: solid hsl(195, 100%, 0%); /*hue saturation lightness color*/
     padding: 3em 2em 3em 2em;
     
+    /*Long-hand Margin*/
     margin-left: 50px;
     margin-right: 50px; 
     margin-top: 20px;
@@ -70,6 +67,7 @@ a:active{
     max-width: 4000px;
 }
 
+/*FlexBox Layout*/
 .AdjustmentForm{
     display: flex;
     flex-direction: column;
@@ -77,12 +75,73 @@ a:active{
     gap: 1;
 }
 
+/*Grid Layout*/
 .RatingForm{
     display: grid;
     place-items:center;
     justify-content: center;
-    grid-template-columns: 50%;
-    grid-template-rows: 10%;
+    grid-template-columns: 50%; /*Relative Unit*/
+    grid-template-rows: 10%;    /*Relative Unit*/
 }
+
+/*------Selectors--------*/
+/*Universal Selector*/
+*{
+    color: black;
+}
+
+/*Element Selector*/
+body{
+    font-family: "JosefinSans-Medium";
+    background-color: rgb(144, 199, 236); /*rgb values color*/
+}
+
+/*ID Selector*/
+#date{
+    color: blue;
+}
+
+/*Attribute Selector*/
+a[href="otherPages/next.html"]{
+    color: red;
+}
+
+
+/*Pseudo-Classe Selectors*/
+a:hover{
+    color : gray;
+}
+
+a:active{
+    color: red;
+}
+
+h1,h3{ /*Selector List*/
+    color:gray;
+}
+
+/*---------Combinators---------*/
+div ul{ /*Descendant Combinator*/
+    background-color: lightblue;
+}
+
+div > h2{ /*Child Combinator*/
+    color: blue;
+}
+
+h1 ~ p{ /*General Sibling Combinator*/
+    color : gray;
+}
+
+li + li{/*Adjacent Sibling Combinator*/
+    color: blue;
+}
+
+li.firstItem{ /*Combining Two Selectors*/
+    color: #07073d; /*Hex color*/
+}
+
+
+
 
 
